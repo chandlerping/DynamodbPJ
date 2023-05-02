@@ -10,8 +10,8 @@ We want to see in which circumstances eventually consistent reads will be incons
 In this project, we develop a configurable framework to reveal such inconsistencies based on 
 [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), which is the AWS SDK for python.
 
-This framework 1) generates a seed file; 2) applies mutations to it to raise the inconsistency rate. /
-The output file shall contain many inconsistent situations.
+This framework 1) generates a seed file; 2) applies mutations to it to raise the inconsistency rate.
+The output will be a mutated file with a higher inconsistency rate.
 
 ## Configuration
 In order to run this project, you need to have an AWS account and set authentication credentials.
