@@ -5,7 +5,7 @@ There are two types of read operations:
 * Strongly consistent reads: require more resource and time but provide the most up-to-date result
 * Eventually consistent reads: require less resource but may return stale result, will be consistent eventually
 
-We want to see in which circumstances eventually consistent reads will be inconsistent.
+We want reveal the potentially inconsistent situations while using eventually consistent reads.
 
 In this project, we develop a configurable framework to reveal such inconsistencies based on 
 [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), which is the AWS SDK for python.
@@ -80,7 +80,7 @@ num_itr = 10
 # the inconsistency rate will be calculated by taking the average of these executions
 check_itr = 50
 ```
-2. run ```main.py```.
+2. Run ```main.py```.
 ```shell
 python main.py
 ```
