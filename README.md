@@ -99,7 +99,7 @@ mutated  0.14
 * A dot refers to a single execution while calculating the inconsistency rate of a file.
 * From the second line, the first number after the dots is the count of mutations that have been performed so far.
 * The last number in a row is the inconsistency rate of this file.
-* If a file has the highest inconsistency rate so far, "mutated <inconsistency rate>" will be printed and this file serves as the input in the following fuzzing processes.
+* If a file has the highest inconsistency rate so far, "mutated \<inconsistency rate\>" will be printed and this file serves as the input in the following fuzzing processes.
 
 ## Design
 * ```src/api``` defines the transactions with the database
