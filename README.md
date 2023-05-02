@@ -107,5 +107,6 @@ mutated  0.14
 * ```src/mutate``` defines the mutations which can be performed during the fuzzing process.
 * ```src/parse``` is a simple file parser.
 * ```src/fuzzer.py``` is the main fuzzer.
+
 This framework is open to extensions. Users can add other mutations or construct the seed file in some new ways.
 
