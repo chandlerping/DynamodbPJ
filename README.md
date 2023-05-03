@@ -14,7 +14,7 @@ This framework 1) generates a seed file; 2) applies mutations to it to raise the
 The output will be a mutated file with a higher inconsistency rate.
 
 ## Configuration
-In order to run this project, you need to have an AWS account and set authentication credentials.
+In order to connect with AWS locally, you need to have an AWS account and set authentication credentials.
 1. Log in or sign up for AWS, here is the [entrance](https://portal.aws.amazon.com/).
 2. Create a IAM user, see [Creating IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console).
 3. Create access key for this IAM user, see [Managing access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey).
@@ -26,7 +26,10 @@ For more detailed tutorial, please refer to [Configuration](https://boto3.amazon
 
 ## Preparation
 1. Git clone this project and get into the ```DynamodbPJ``` dir.
-2. Install Python3.x.
+2. Install Python3.x and pip.
+```text
+pip install -r requirements.txt
+```
 3. Create a new "user" table.
 ```shell
 python create_table.py
