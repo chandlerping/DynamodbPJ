@@ -19,14 +19,22 @@ In order to connect with AWS locally, you need to have an AWS account and set au
 2. Create a IAM user, see [Creating IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console).
 3. Create access key for this IAM user, see [Managing access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey).
 4. Install [AWS CLI](https://aws.amazon.com/cli/).
-5. Run ```aws configure``` in terminal, and fill in the key id and key (from step 3) to complete configuration.
+On Ubuntu, just run ```pip3 install --upgrade awscli```.
+5. Run ```aws configure``` in terminal, and fill in the key id, key (from step 3) and region name to complete configuration.
+```text
+afl@afl-VirtualBox:~/Desktop/DynamodbPJ$ aws configure
+AWS Access Key ID [****************T2OS]: 
+AWS Secret Access Key [****************f3Wg]: 
+Default region name [us‑east‑2]: 
+Default output format [None]: 
+```
 
 After these steps, you should be able to use Boto3 and create connections with AWS. 
 For more detailed tutorial, please refer to [Configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#configuration).
 
 ## Preparation
 1. Git clone this project and get into the ```DynamodbPJ``` dir.
-2. Install Python3.x and pip.
+2. Install Python3.7 and pip.
 ```text
 pip install -r requirements.txt
 ```
