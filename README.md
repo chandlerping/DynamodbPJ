@@ -86,7 +86,10 @@ python main.py
 ```
 3. The seed file will be ```./demo/seed.py```, the tmp file used for fuzzing is ```./demo/mutation_tmp.py``` and the output file is ```./demo/mutation_fuzz.py```.
 
-## Output format
+## Output
+Note: The fuzzing process could vary based on configuration and network condition, and since fuzzing is relatively random,
+the process will not be the same even with a same config set. 
+
 The final output file is ```./demo/mutation_fuzz.py```.
 The output on stdout has the format as
 ```text
