@@ -20,7 +20,7 @@ In order to connect with AWS locally, you need to have an AWS account and set au
 3. Create access key for this IAM user, see [Managing access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey).
 4. Install [AWS CLI](https://aws.amazon.com/cli/).
 On Ubuntu, just run ```pip3 install --upgrade awscli```.
-5. Run ```aws configure``` in terminal, and fill in the key id, key (from step 3) and region name to complete configuration.
+5. Run ```aws configure``` in terminal, and fill in the key id, key (from step 3) and region name (us-east-2) to complete configuration.
 ```text
 afl@afl-VirtualBox:~/Desktop/DynamodbPJ$ aws configure
 AWS Access Key ID [****************T2OS]: 
@@ -34,8 +34,11 @@ For more detailed tutorial, please refer to [Configuration](https://boto3.amazon
 
 ## Preparation
 1. Git clone this project and get into the ```DynamodbPJ``` dir.
+```shell
+git clone https://github.com/chandlerping/DynamodbPJ.git
+```
 2. Install Python3.7 and pip.
-```text
+```shell
 pip install -r requirements.txt
 ```
 3. Create a new "user" table.
